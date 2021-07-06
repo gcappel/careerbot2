@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Network Administrators</pattern>
+	    <template>Network administrators maintain networks for optimal performance.
+	    <button>
+	        <text>That sound's interesting. Tell me more.</text>
+	        <postback>NE MORE</postback>
+        </button>
+        <button>
+            <text>I'm already bored. Please tell me about something else.</text>
+            <postback>NE BORED</postback>
+        </button>
+	     </template>
+	    
+	</category>
+	
+	<category>
+	    <pattern>NE MORE</pattern>
+	    <template>Network Administrators will work to optimize and enhance performance. They also must maintain network security and potentially be involved in training and educating new network
+	    users. Click on the list below to learn more.
+	        <button>
+	            <text>What is a Network Engineer?</text>
+	            <url>https://www.wgu.edu/blog/what-network-engineer2011.html</url>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+        </button>
+	    </template>
+	</category>
+	
+    <category>
+	    <pattern>NE BORED</pattern>
+	    <template>Ok. We will explore some other options. What would you like to do next?
+	    <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+	    </template>
+	</category>
+</aiml>

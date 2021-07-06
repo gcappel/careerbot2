@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Software Developer</pattern>
+	    <template>Software developers create programs and software for a variety of needs and functionalities.
+	    <button>
+	        <text>That sound's interesting. Tell me more.</text>
+	        <postback>SD MORE</postback>
+        </button>
+        <button>
+            <text>I'm already bored. Please tell me about something else.</text>
+            <postback>SD BORED</postback>
+        </button>
+	     </template>
+	    
+	</category>
+	
+	<category>
+	    <pattern>SD MORE</pattern>
+	    <template>In addition to developing programs, Software Developers are also involved in testing the programs and ensuring that they stay up to date and functional with changing technology. 
+	    It is important they have possess good communication skills and have the ability to work well in a team-oriented environment.
+	        <button>
+	            <text>I want to learn more.</text>
+	            <url>SD Even More</url>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+        </button>
+	    </template>
+	</category>
+	
+	<category>
+	   <pattern>SD Even More</pattern>
+	   <template>Click on the link below to read more about working as a Software Developer.
+	   <button>
+	       <text>What Does a Software Developer Do?</text>
+	       <url>https://www.wgu.edu/career-guide/information-technology/software-developer-career.html</url>
+        </button>
+        <button>
+            <text>Learn about something else.</text>
+            <postback>Learn</postback>
+        </button>
+	    </template>
+	</category>
+	
+    <category>
+	    <pattern>SD BORED</pattern>
+	    <template>Ok. We will explore some other options. What would you like to do next?
+	    <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+	    </template>
+	</category>
+</aiml>

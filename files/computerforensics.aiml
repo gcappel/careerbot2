@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Computer Forensics</pattern>
+	    <template>Computer forensic specialists investigate security issues, data breaches, and other cyber crimes. They work with law enforcement, the criminal justice system,
+	    and cybersecurity teams.
+	    <button>
+	        <text>That sound's interesting. Tell me more.</text>
+	        <postback>CS MORE</postback>
+        </button>
+        <button>
+            <text>I'm already bored. Please tell me about something else.</text>
+            <postback>CS BORED</postback>
+        </button>
+	     </template>
+	    
+	</category>
+	
+	<category>
+	    <pattern>CS MORE</pattern>
+	    <template>Many positions within this field require additional certifications to be completed
+	    in addition to obtaining a computer science degree.
+	        <button>
+	            <text>What skills does a forensic specialist need?</text>
+	            <postback>CFSkills</postback>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+            </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>CFSkills</pattern>
+	    <template>You should have a grasp on computer networking and operating systems. The nature of the job requires you to be highly analytical
+	    as you will constantly be analyzing data and various types of digital evidence.
+	    <button>
+	        <text>Learn More</text>
+	        <postback>CFS MORE</postback>
+	    </button>
+	    <button>
+            <text>Learn about something else.</text>
+            <postback>Learn</postback>
+        </button>
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>CFS MORE</pattern>
+	    <template>Click on the link below to read more about working as a Computer Forensics Specialist.
+	        <button>
+	            <text>What is Computer Forensics?</text>
+	            <url>https://www.wgu.edu/blog/computer-forensics2004.html</url>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+            </button>
+	    </template>
+	</category>
+	
+    <category>
+	    <pattern>CS BORED</pattern>
+	    <template>Ok. We will explore some other options. What would you like to do next?
+	    <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+	    </template>
+	</category>
+	    
+	
+</aiml>

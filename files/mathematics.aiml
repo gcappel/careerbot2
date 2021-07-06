@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+     <category>
+        <pattern>Pick a Career</pattern>
+        <template>I am going to ask you a series of questions to get to know your interests and skills better. Let's begin. Which do you prefer?
+        <button>
+            <text>Working with people</text>
+            <postback>People</postback>
+        </button>
+        <button>
+            <text>Designing software/programs</text>
+            <postback>Coding</postback>
+        </button>
+        <button>
+            <text>Working directly with computer networks</text>
+            <postback>Networks</postback>
+        </button>
+        </template>
+     </category>   
+    
+    <category>
+        <pattern>People</pattern>
+        <template>Do you enjoy coding and creating software and applications?
+        <button>
+            <text>Yes</text>
+            <postback>CodingYes</postback>
+        </button>
+        <button>
+            <text>It's ok.</text>
+            <postback>CodingOK</postback>
+        </button>
+        <button>
+            <text>Anything but that!!</text>
+            <postback>CodingNo</postback>
+        </button>
+        </template>
+    </category>   
+    
+    <category>
+        <pattern>Coding</pattern>
+        <template>What would you rather do?
+        <button>
+            <text>Code to create complete software applications</text>
+            <postback>Software</postback>
+        </button>
+        <button>
+            <text>Code to manipulate and glean information from datasets</text>
+            <postback>Data</postback>
+        </button></template>
+    </category>
+    
+    
+    <category>
+        <pattern>CodingOk</pattern>
+        <template>Ok. Which do you prefer?
+         <button>
+	        <text>Applications/software programming</text>
+	        <postback>Software</postback>
+        </button>
+        <button>
+	        <text>Using programming languages to work with and manipulate datasets</text>
+	        <postback>Data</postback>
+        </button>
+        <button>
+            <text>Utilizing my coding skills to investigate and document information</text>
+            <postback>Investigate</postback>
+        </button>
+        <button>
+            <text>Designing software to be user-friendly</text>
+            <postback>Design</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CodingYes</pattern>
+        <template>What do you enjoy more?
+        <button>
+	        <text>Applications/software programming</text>
+	        <postback>Software</postback>
+        </button>
+        <button>
+	        <text>Using programming languages to work with and manipulate datasets</text>
+	        <postback>Data</postback>
+        </button>
+        <button>
+            <text>Utilizing my coding skills to investigate and document information</text>
+            <postback>Investigate</postback>
+        </button>
+        </template>
+    </category>
+        
+    <category>
+        <pattern>CodingNo</pattern>
+        <template>What would you prefer doing?
+            <button>
+                <text>Designing products and interfaces to be user-friendly</text>
+                <postback>Design</postback>
+            </button>
+            <button>
+                <text>Investigating computer records and documents for evidence </text>
+                <postback>Investigate</postback>
+            </button>
+            <button>
+                <text>Working with network systems </text>
+                <postback>Network</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>Networks</pattern>
+	    <template>Awesome! So you enjoy working with networks. I recommend you look into a career as a Network Administrator.
+	    
+	    <button>
+	        <text>Click Here to learn more about working as a Network Administrator.</text>
+	        <postback>Network Administrators</postback>
+        </button>
+        <button>
+            <text>Learn Something Else</text>
+            <postback>Learn</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>Investigate</pattern>
+        <template>You should look into working in Computer Forensics.
+        <button>
+            <text>Learn More About Computer Forensics</text>
+            <postback>Computer Forensics</postback>
+        </button>
+        <button>
+            <text>Learn Something Else</text>
+            <postback>Learn</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Design</pattern>
+        <template>You should look into a career as a UX Designer.</template>
+        <button>
+            <text>Learn More About UX Design</text>
+            <postback>UX Designer</postback>
+        </button>
+        <button>
+            <text>Learn Something Else</text>
+            <postback>Learn</postback>
+        </button>
+    </category>
+
+
+	<category>
+	    <pattern>Software</pattern>
+	    <template>Awesome! So you enjoy software design. I recommend you look into a career Software Developer.
+	    
+	    <button>
+	        <text>Click Here to learn more about working as a Software Developer.</text>
+	        <postback>Software Developer</postback>
+        </button>
+        <button>
+            <text>Learn Something Else</text>
+            <postback>Learn</postback>
+        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>Data</pattern>
+	    <template>You should look into a career as a Data Scientist.
+	     <button>
+	        <text>Click Here to learn more about working as a Data Scientist.</text>
+	        <postback>Data Scientist</postback>
+        </button>
+        <button>
+            <text>Learn Something Else</text>
+            <postback>Learn</postback>
+        </button>
+        </template>
+	</category>
+</aiml>

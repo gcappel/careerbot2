@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  
+  <category>
+      <pattern>begin</pattern>
+      <template>Hi! My name is CareerBot. Today we will discuss some ideas to assist you in finding an 
+      ideal career path. What is your name?</template>
+  </category>
+  <category>
+      <pattern>My name is *</pattern>
+      <template>Hi <set name = "username"><star /></set>, let's get started. Please choose one of the options below. 
+      
+        <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+        <pattern>Top Computer Science Careers</pattern>
+        <template> Ok, <get name = "username"></get> here are the top five Computer Science careers. Click on one to learn more.
+        <button>
+            <text>Computer Forensics</text>
+            <postback>Computer Forensics</postback>
+        </button>
+        
+        <button>
+            <text>Software Developer</text>
+            <postback>Software Developer</postback>
+        </button>
+        
+        <button>
+            <text>Data Scientist</text>
+            <postback>Data Scientist</postback>
+        </button>
+        
+        <button>
+            <text>UX Designer</text>
+            <postback>UX Designer</postback>
+        </button>
+        
+        <button>
+            <text>Network Engineer</text>
+            <postback>Network Engineer</postback>
+        </button>
+        </template>
+        
+   </category>  
+   
+
+    <category>
+        <pattern>Learn</pattern>
+        <template>What would you like to do next?
+        <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+        </template>
+    </category>
+</aiml>

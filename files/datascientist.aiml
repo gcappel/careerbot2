@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Data Scientist</pattern>
+	    <template>Data Scientists dig into big data with powerful techniques to gain information that help companies meet specific goals and needs.
+	    <button>
+	        <text>That sound's interesting. Tell me more.</text>
+	        <postback>DS MORE</postback>
+        </button>
+        <button>
+            <text>I'm already bored. Please tell me about something else.</text>
+            <postback>DS BORED</postback>
+        </button>
+	     </template>
+	    
+	</category>
+	
+	<category>
+	    <pattern>DS MORE</pattern>
+	    <template>A data scientist can take on many different roles. They need to have technical skills, business acumen, and interpersonal skills.
+	        <button>
+	            <text>What type of technical skills are required?</text>
+	            <postback>Technical Skills</postback>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+            </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>Technical Skills</pattern>
+	    <template>A few techniques data scientists employ daily include data visualization, machine learning, and pattern recognition. To learn more, click on the link below.  
+	        <button>
+	            <text>What is a Data Scientist?</text>
+	            <url>https://www.wgu.edu/career-guide/information-technology/data-scientist-career.html</url>
+            </button>
+            <button>
+                <text>Learn about something else.</text>
+                <postback>Learn</postback>
+            </button>
+	    </template>
+	</category>
+	
+    <category>
+	    <pattern>CS BORED</pattern>
+	    <template>Ok. We will explore some other options. What would you like to do next?
+	    <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+	    </template>
+	</category>
+</aiml>

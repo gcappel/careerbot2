@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>UX Designer</pattern>
+	    <template>UX is short for "user experience design". Essentially UX design is the process of making products and software user-friendly. 
+	    <button>
+	        <text>That sound's interesting. Tell me more.</text>
+	        <postback>UX MORE</postback>
+        </button>
+        <button>
+            <text>I'm already bored. Please tell me about something else.</text>
+            <postback>UX BORED</postback>
+        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>UX MORE</pattern>
+	    <template>A IT product or software can be brilliant, but if it is not user-friendly, then it most likely going to do poorly when it hits the market. First and foremost, UX designers are 
+	    focused on people and how they view and interact with their product.
+	    <button>
+	        <text>What skills should a UX Designer have?</text>
+	        <postback>UXSkills</postback>
+        </button>
+	    <button>
+            <text>Learn about something else.</text>
+            <postback>Learn</postback>
+        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>UXSkills</pattern>
+	    <template>You should be people-oriented - focused on understanding their needs and wants. You are going to be bridging the gap between people and technology. Possessing good communication
+	    techniques and being able to collaborate as a team is also very important. Click on the link below to learn more.
+	    <button>
+	        <text>What is UX Design?</text>
+	        <url>https://www.wgu.edu/blog/what-ux-design2012.html</url>
+        </button>
+        <button>
+            <text>Learn about something else.</text>
+            <postback>Learn</postback>
+        </button>
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>UX BORED</pattern>
+	    <template>Ok. We will explore some other options. What would you like to do next?
+	    <button>
+            <text>TOP FIVE COMPUTER SCIENCE CAREERS</text>
+            <postback>Top Computer Science Careers</postback>
+        </button>
+        
+        <button>
+            <text>HELP ME PICK A CAREER</text>
+            <postback>Pick a Career</postback>
+        </button>
+	    </template>
+	</category>
+</aiml>
